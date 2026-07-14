@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{brand-name}} | {{short-tagline}}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    *{
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+       <a href="#" class="brand">
+         <img data-brand="logo" src="./assets/LOGO.png" class="brand__logo" alt="Brand Logo" /> -
+         
+      </a> 
+  <h3 data-brand="name" class="brand__name"> {{brand-name}}</h3>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About Us</a></li>
+          <li><a href="#Treatments">Treatments</a></li>
+          <li><a href="#Gallery">Gallery</a></li>
+          <li><a href="#Testimonials">Testimonials</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="button button--primary" href="#Contact">Appointment</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="Home">
+      <div class="hero__content">
+        <span data-hero="eyebrow" class="hero__eyebrow">{{short-tagline}}</span>
+        <h1>Glow with confidence, naturally.</h1>
+        <p>Personalized skin treatments grounded in science, designed to restore radiance and resilience.</p>
+
+        <div class="hero__actions">
+          <a class="button button--accent" href="#Contact">Book An Appointment</a>
+          <a class="button button--secondary" href="#Treatments">Explore Treatments</a>
+        </div>
+      </div>
+
+      <div class="hero__slider">
+        <div class="slider-container">
+          <div class="slide active">
+            <img src="./assets/Slider-1.png" alt="Luxury Facial Treatment" />
+          </div>
+          <div class="slide">
+            <img src="./assets/slider1.png" alt="Advanced Skin Care" />
+          </div>
+          <div class="slide">
+            <img src="./assets/Slider-3.jpg" alt="Professional Dermatology" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="About">
+      <div class="container">
+        <div class="about__content">
+          <h2 class="about__tagline">HERE IS {{brand-name}}</h2>
+          <h1 class="about__title">ABOUT US</h1>
+          <p class="about__description">At {{brand-name}}, a leading dermatology clinic in <span data-location="city">{{city}}</span>, we provide advanced skin care and aesthetic treatments in a luxurious, welcoming environment. Our experienced dermatologists and skincare specialists use the latest technology to deliver personalized treatments for healthy, radiant skin. From HydraFacial and PRP therapy to laser treatments and skin rejuvenation, we offer result-driven solutions tailored to your needs. Whether you are looking for acne treatment, anti-aging solutions, or a relaxing skincare experience, {{brand-name}} is your trusted destination in <span data-location="city">{{city}}</span>.</p>
+
+          <div class="stats">
+            <div class="stat-item">
+              <strong>4.9</strong>
+              <span>Rating</span>
+            </div>
+            <div class="stat-item">
+              <strong>65+</strong>
+              <span>Happy Clients</span>
+            </div>
+            <div class="stat-item">
+              <strong>Advanced</strong>
+              <span>Technology</span>
+            </div>
+            <div class="stat-item">
+              <strong>Certified</strong>
+              <span>Experts</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__image">
+          <img src="./assets/About (3).jpg" alt="About GLO Medi Spa" />
+        </div>
+      </div>
+    </section>
+
+    <!--  Treatment section===================== -->
+      <section class="treatment-section" id="Treatments">
+        <div class="container">
+          <div class="treatment-header">
+            <span class="treatment-label">OUR TREATMENTS</span>
+            <h2 class="treatment-title">Advanced Skin & Aesthetic Solutions</h2>
+            <p class="treatment-subtitle">Experience cutting-edge dermatological treatments designed to rejuvenate, restore, and enhance your natural beauty with our premium, science-backed procedures.</p>
+          </div>
+
+          <div class="treatment-grid">
+            <div class="treatment-card">
+              <div class="card-image-container">
+                <img src="./assets/hydra.jpg" alt="HydraFacial Treatment" class="treatment-image" />
+                <div class="image-overlay"></div>
+                <span class="treatment-badge">Popular</span>
+              </div>
+              <div class="card-content">
+                <h3 class="treatment-card-title">HydraFacial</h3>
+                <p class="treatment-description">A revolutionary non-invasive treatment that deeply cleanses, exfoliates, and hydrates your skin for an instant radiant glow.</p>
+                <ul class="treatment-benefits">
+                  <li>Deep cleansing & exfoliation</li>
+                  <li>Hydration boost</li>
+                  <li>Immediate results</li>
+                </ul>
+                <a href="#" class="treatment-cta">Book Now</a>
+              </div>
+            </div>
+
+            <div class="treatment-card">
+              <div class="card-image-container">
+                <img src="./assets/PRP.jpg" alt="PRP Therapy" class="treatment-image" />
+                <div class="image-overlay"></div>
+              </div>
+              <div class="card-content">
+                <h3 class="treatment-card-title">PRP Therapy</h3>
+                <p class="treatment-description">Harness your body's natural healing power with platelet-rich plasma to stimulate collagen and rejuvenate your skin.</p>
+                <ul class="treatment-benefits">
+                  <li>Natural collagen stimulation</li>
+                  <li>Youthful skin restoration</li>
+                  <li>Minimal downtime</li>
+                </ul>
+                <a href="#" class="treatment-cta">Book Now</a>
+              </div>
+            </div>
+
+            <div class="treatment-card">
+              <div class="card-image-container">
+                <img src="./assets/Laser Skin Resurfacing.jpg" alt="Laser Skin Resurfacing" class="treatment-image" />
+                <div class="image-overlay"></div>
+              </div>
+              <div class="card-content">
+                <h3 class="treatment-card-title">Laser Skin Resurfacing</h3>
+                <p class="treatment-description">Advanced laser technology to improve skin texture, reduce wrinkles, and achieve a smoother, more youthful complexion.</p>
+                <ul class="treatment-benefits">
+                  <li>Texture improvement</li>
+                  <li>Wrinkle reduction</li>
+                  <li>Precision treatment</li>
+                </ul>
+                <a href="#" class="treatment-cta">Book Now</a>
+              </div>
+            </div>
+
+            <div class="treatment-card">
+              <div class="card-image-container">
+                <img src="./assets/Acne Treatment (1).jpg" alt="Acne Treatment" class="treatment-image" />
+                <div class="image-overlay"></div>
+              </div>
+              <div class="card-content">
+                <h3 class="treatment-card-title">Acne Treatment</h3>
+                <p class="treatment-description">Comprehensive, personalized acne treatments combining medical expertise with advanced technology for clear, healthy skin.</p>
+                <ul class="treatment-benefits">
+                  <li>Customized treatment plans</li>
+                  <li>Advanced technology</li>
+                  <li>Long-term results</li>
+                </ul>
+                <a href="#" class="treatment-cta">Book Now</a>
+              </div>
+            </div>
+
+            <div class="treatment-card">
+              <div class="card-image-container">
+                <img src="./assets/Chemical Peel (1).jpg" alt="Chemical Peel" class="treatment-image" />
+                <div class="image-overlay"></div>
+              </div>
+              <div class="card-conte nt">
+                <h3 class="treatment-card-title">Chemical Peel</h3>
+                <p class="treatment-description">Professional chemical peels to exfoliate dead skin cells, improve texture, and reveal a brighter, more even complexion.</p>
+                <ul class="treatment-benefits">
+                  <li>Exfoliation & renewal</li>
+                  <li>Even skin tone</li>
+                  <li>Customizable strength</li>
+                </ul>
+                <a href="#" class="treatment-cta">Book Now</a>
+              </div>
+              </div>
+              <div class="treatment-card">
+              <div class="card-image-container">
+                <img src="./assets/HydraFacial (1).jpg" alt="HydraFacial" class="treatment-image" />
+                <div class="image-overlay"></div>
+              </div>
+              <div class="card-content">
+                <h3 class="treatment-card-title">HydraFacial</h3>
+                <p class="treatment-description">A gentle, non-invasive treatment that combines cleansing, exfoliation, extraction, and hydration to deliver a radiant, healthy glow.</p>
+                <ul class="treatment-benefits">
+                  <li>Exfoliation & renewal</li>
+                  <li>Even skin tone</li>
+                  <li>Customizable strength</li>
+                </ul>
+                <a href="#" class="treatment-cta">Book Now</a>
+              </div>
+            
+ 
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+<!-- ============================================
+     GALLERY SECTION - Luxury Grid Layout
+     ============================================ -->
+    <section class="gallery" id="Gallery">
+      <div class="container">
+        <header class="gallery__header">
+          <span class="gallery__label">Gallery</span>
+          <h2 class="gallery__title">Our Work Speaks for Itself</h2>
+          <div class="gallery__accent"></div>
+          <p class="gallery__subtitle">Explore a refined gallery of transformations and luminous results achieved through our expert dermatology treatments.</p>
+        </header>
+
+        <!-- 
+          Gallery Grid Layout:
+          - 4 columns on desktop
+          - 2 columns on tablet  
+          - 1 column on mobile
+          - 1 featured large image (top-left, spans 2x2)
+          - 1 tall image (top-right, spans 2 rows)
+          - 6 standard images (1x1 each)
+        -->
+        <div class="gallery__grid">
+          
+          <!-- Featured Image (Large - 2x2) -->
+          <button type="button" 
+                  class="gallery__item gallery__item--featured" 
+                  data-image="./assets/Gallery-1.jpg" 
+                  data-title="HydraFacial Glow Treatment"
+                  aria-label="View HydraFacial Glow Treatment">
+            <img src="./assets/Gallery-1 (1).jpg" 
+                 alt="HydraFacial Glow Treatment" 
+                 class="gallery__image" 
+                 loading="lazy" />
+            <div class="gallery__overlay">
+              
+              <span class="gallery__overlay-text">HydraFacial Glow</span>
+            </div>
+          </button>
+
+          <!-- Tall Image (2 rows) -->
+          <button type="button" 
+                  class="gallery__item gallery__item--tall" 
+                  data-image="./assets/Gallery-2.jpg" 
+                  data-title="Laser Treatment Result"
+                  aria-label="View Laser Treatment Result">
+            <img src="./assets/Gallery-2.jpg" 
+                 alt="Laser Treatment Result" 
+                 class="gallery__image" 
+                 loading="lazy" />
+            <div class="gallery__overlay">
+              <span class="gallery__overlay-text">Laser Treatment</span>
+            </div>
+          </button>
+
+          <!-- Standard Image 1 -->
+          <button type="button" 
+                  class="gallery__item" 
+                  data-image="./assets/Gallery-3.jpg" 
+                  data-title="Skin Rejuvenation Therapy"
+                  aria-label="View Skin Rejuvenation Therapy">
+            <img src="./assets/Gallery-3.jpg" 
+                 alt="Skin Rejuvenation Therapy" 
+                 class="gallery__image" 
+                 loading="lazy" />
+            <div class="gallery__overlay">
+              <span class="gallery__overlay-text">Skin Rejuvenation</span>
+            </div>
+          </button>
+
+          <!-- Standard Image 2 -->
+          <button type="button" 
+                  class="gallery__item" 
+                  data-image="./assets/Gallery-4.jpg" 
+                  data-title="Luxury Facial Treatment"
+                  aria-label="View Luxury Facial Treatment">
+            <img src="./assets/Gallery-4.jpg" 
+                 alt="Luxury Facial Treatment" 
+                 class="gallery__image" 
+                 loading="lazy" />
+            <div class="gallery__overlay">
+              <span class="gallery__overlay-text">Luxury Facial</span>
+            </div>
+          </button>
+
+          <!-- Standard Image 3 -->
+          <button type="button" 
+                  class="gallery__item" 
+                  data-image="./assets/Gallery9.jpg" 
+                  data-title="Radiant Skin Results"
+                  aria-label="View Radiant Skin Results">
+            <img src="./assets/Gallery9.jpg" 
+                 alt="Radiant Skin Results" 
+                 class="gallery__image" 
+                 loading="lazy" />
+            <div class="gallery__overlay">
+              <span class="gallery__overlay-text">Radiant Results</span>
+            </div>
+          </button>
+
+          <!-- Standard Image 4 -->
+          <button type="button" 
+                  class="gallery__item" 
+                  data-image="./assets/Gallery-8.jpg" 
+                  data-title="Soft Glow Treatment"
+                  aria-label="View Soft Glow Treatment">
+            <img src="./assets/Gallery-8.jpg" 
+                 alt="Soft Glow Treatment" 
+                 class="gallery__image" 
+                 loading="lazy" />
+            <div class="gallery__overlay">
+              <span class="gallery__overlay-text">Soft Glow</span>
+            </div>
+          </button>
+
+          <!-- Standard Image 5 -->
+          <button type="button" 
+                  class="gallery__item" 
+                  data-image="./assets/gallery7.jpg" 
+                  data-title="Acne Treatment Success"
+                  aria-label="View Acne Treatment Success">
+            <img src="./assets/gallery7.jpg" 
+                 alt="Acne Treatment Success" 
+                 class="gallery__image" 
+                 loading="lazy" />
+            <div class="gallery__overlay">
+              <span class="gallery__overlay-text">Acne Treatment</span>
+            </div>
+          </button>
+
+          <!-- Standard Image 6 -->
+          <button type="button" 
+                  class="gallery__item" 
+                  data-image="./assets/contact.jpg" 
+                  data-title="PRP Hair Restoration"
+                  aria-label="View PRP Hair Restoration">
+            <img src="./assets/contact (1).jpg" 
+                 alt="PRP Hair Restoration" 
+                 class="gallery__image" 
+                 loading="lazy" />
+            <div class="gallery__overlay">
+              <span class="gallery__overlay-text">PRP Hair Restoration</span>
+            </div>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+<!-- ============================================
+     WHY CHOOSE US - LUXURY SECTION
+     Premium glassmorphism design with gold accents
+     ============================================ -->
+<section class="why-luxury" id="WhyChooseUs">
+  <!-- Background Layer -->
+  <div class="why-luxury__bg">
+    <img src="./assets/Choose (1).jpg" alt="Luxury clinic ambiance" class="why-luxury__bg-image" />
+    <div class="why-luxury__bg-overlay"></div>
+  </div>
+
+  <!-- Content Layer -->
+  <div class="why-luxury__container">
+    <div class="why-luxury__grid">
+      
+      <!-- LEFT: Featured Image with Parallax -->
+      <div class="why-luxury__visual">
+        <div class="why-luxury__image-wrapper">
+          <img 
+            src="./assets/Choose (1).jpg" 
+            alt="Premium dermatology treatment experience" 
+            class="why-luxury__image"
+          />
+          <div class="why-luxury__image-glow"></div>
+          
+          <!-- Floating Trust Badge -->
+          <div class="why-luxury__floating-badge">
+            <div class="trust-rating">
+              <span class="trust-rating__stars">★★★★★</span>
+              <span class="trust-rating__score">4.9</span>
+            </div>
+            <span class="trust-rating__label">Excellence Rated</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Content Block -->
+      <div class="why-luxury__content">
+        
+        <!-- Section Header -->
+        <div class="why-luxury__header">
+          <span class="why-luxury__eyebrow">Why Choose Us</span>
+          <h2 class="why-luxury__title">
+            The Art of<br/>
+            <span class="why-luxury__title-accent">Beautiful Skin</span>
+          </h2>
+          <p class="why-luxury__subtitle">
+            Where Beverly Hills-level expertise meets personalized care. 
+            Experience dermatological excellence in an environment designed 
+            for your comfort and transformation.
+          </p>
+        </div>
+
+        <!-- Glassmorphism Feature Cards -->
+        <div class="why-luxury__cards">
+          
+          <!-- Card 1: Personalized Care -->
+          <div class="luxury-card">
+            <div class="luxury-card__glow"></div>
+            <div class="luxury-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                <path d="M12 6v6l4 2"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </div>
+            <div class="luxury-card__content">
+              <h3 class="luxury-card__title">Bespoke Treatments</h3>
+              <p class="luxury-card__text">Personalized protocols crafted for your unique skin profile and aesthetic goals.</p>
+            </div>
+          </div>
+
+          <!-- Card 2: Technology -->
+          <div class="luxury-card">
+            <div class="luxury-card__glow"></div>
+            <div class="luxury-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                <path d="M2 17l10 5 10-5"/>
+                <path d="M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <div class="luxury-card__content">
+              <h3 class="luxury-card__title">Advanced Technology</h3>
+              <p class="luxury-card__text">FDA-approved lasers and medical-grade equipment for precision results.</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Experts -->
+          <div class="luxury-card">
+            <div class="luxury-card__glow"></div>
+            <div class="luxury-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+                <path d="M12 11v.01"/>
+              </svg>
+            </div>
+            <div class="luxury-card__content">
+              <h3 class="luxury-card__title">Certified Experts</h3>
+              <p class="luxury-card__text">Board-certified dermatologists with decades of combined expertise.</p>
+            </div>
+          </div>
+
+          <!-- Card 4: Results -->
+          <div class="luxury-card">
+            <div class="luxury-card__glow"></div>
+            <div class="luxury-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </div>
+            <div class="luxury-card__content">
+              <h3 class="luxury-card__title">Proven Results</h3>
+              <p class="luxury-card__text">98% client satisfaction with visible transformations that last.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Trust Signals Row -->
+        <div class="why-luxury__trust-signals">
+          <div class="trust-signal">
+            <span class="trust-signal__number">65+</span>
+            <span class="trust-signal__label">Happy Clients</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-signal">
+            <span class="trust-signal__number">15+</span>
+            <span class="trust-signal__label">Years Experience</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-signal">
+            <span class="trust-signal__number">100%</span>
+            <span class="trust-signal__label">Safety Record</span>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="why-luxury__cta">
+          <a href="#Contact" class="why-luxury__button">
+            <span>Book Consultation</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <p class="why-luxury__cta-note">Complimentary skin analysis • Limited availability</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+     <div class="gallery-lightbox" aria-hidden="true">
+       <div class="gallery-lightbox__content" role="dialog" aria-modal="true">
+         <button class="gallery-lightbox__close" aria-label="Close gallery view">×</button>
+         <button class="gallery-lightbox__nav gallery-lightbox__nav--prev" aria-label="Previous image"></button>
+         <img class="gallery-lightbox__image" src="" alt="" />
+         <div class="gallery-lightbox__caption"></div>
+         <button class="gallery-lightbox__nav gallery-lightbox__nav--next" aria-label="Next image"></button>
+       </div>
+     </div>
+
+
+    <!-- ============Testimonials ============= -->
+    <section class="testimonials-section" id="Testimonials">
+      <div class="container">
+        <!-- Trust Header -->
+        <div class="testimonials-header">
+          <div class="trust-badge">
+            <div class="rating-stars">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <span class="rating-text">4.9 Rated by 65+ Clients in Faisalabad</span>
+          </div>
+          <p class="trust-subtitle">Real results from real clients</p>
+        </div>
+
+        <!-- Testimonials Carousel -->
+        <div class="testimonials-carousel">
+          <div class="carousel-container">
+            <div class="carousel-track">
+
+              <!-- Testimonial 1 -->
+              <div class="testimonial-slide">
+                <div class="testimonial-card">
+                  <div class="quote-icon">"</div>
+                  <div class="rating-stars">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                  </div>
+                  <p class="testimonial-text">
+                    "I've been visiting {{brand-name}} for hair and skin treatments and I'm truly happy with the results. The staff is friendly, professional, and always makes me feel comfortable."
+                  </p>
+                  <div class="testimonial-author">
+                    <img src="./assets/galler1.jpg" alt="Rana Muaaz" class="author-photo" />
+                    <div class="author-info">
+                      <strong class="author-name">Rana Muaaz</strong>
+                      <span class="author-location" data-location="city">{{city}}</span>
+                      <span class="verified-badge">✓ Verified Client</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 2 -->
+              <div class="testimonial-slide">
+                <div class="testimonial-card">
+                  <div class="quote-icon">"</div>
+                  <div class="rating-stars">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                  </div>
+                  <p class="testimonial-text">
+                    "I've been getting HydraFacial sessions regularly and I love the results every time. The doctors are professional and guide you according to your skin needs."
+                  </p>
+                  <div class="testimonial-author">
+                    <img src="./assets/galler2.jpg" alt="Nabil Saeed" class="author-photo" />
+                    <div class="author-info">
+                      <strong class="author-name">Nabil Saeed</strong>
+                      <span class="author-location" data-location="city">{{city}}</span>
+                      <span class="verified-badge">✓ Verified Client</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 3 -->
+              <div class="testimonial-slide">
+                <div class="testimonial-card">
+                  <div class="quote-icon">"</div>
+                  <div class="rating-stars">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                  </div>
+                  <p class="testimonial-text">
+                    "After PRP sessions, I noticed amazing results. My hair feels thicker and healthier, and I can see new hair growth. Highly recommended for hair loss treatment."
+                  </p>
+                  <div class="testimonial-author">
+                    <img src="./assets/gallery3.jpg" alt="Muhammad Saleem" class="author-photo" />
+                    <div class="author-info">
+                      <strong class="author-name">Muhammad Saleem</strong>
+                      <span class="author-location" data-location="city">{{city}}</span>
+                      <span class="verified-badge">✓ Verified Client</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 4 -->
+              <div class="testimonial-slide">
+                <div class="testimonial-card">
+                  <div class="quote-icon">"</div>
+                  <div class="rating-stars">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                  </div>
+                  <p class="testimonial-text">
+                    "I got laser sessions here and saw amazing results after just a few sessions. The staff is professional and the environment is clean and welcoming."
+                  </p>
+                  <div class="testimonial-author">
+                    <img src="./assets/gallery6.jpg" alt="Rama Khan" class="author-photo" />
+                    <div class="author-info">
+                      <strong class="author-name">Rama Khan</strong>
+                      <span class="author-location" data-location="city">{{city}}</span>
+                      <span class="verified-badge">✓ Verified Client</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 5 -->
+              <div class="testimonial-slide">
+                <div class="testimonial-card">
+                  <div class="quote-icon">"</div>
+                  <div class="rating-stars">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                  </div>
+                  <p class="testimonial-text">
+                    "I came in with dull skin and left with a brighter, glowing complexion. The staff is skilled and caring. Highly recommend {{brand-name}}."
+                  </p>
+                  <div class="testimonial-author">
+                    <img src="./assets/gallery7.jpg" alt="Muhammad Anim Rashid" class="author-photo" />
+                    <div class="author-info">
+                      <strong class="author-name">Muhammad Anim Rashid</strong>
+                      <span class="author-location" data-location="city">{{city}}</span>
+                      <span class="verified-badge">✓ Verified Client</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Navigation Dots -->
+          <div class="carousel-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+            <span class="dot" data-slide="4"></span>
+          </div>
+
+          <!-- Navigation Arrows -->
+          <button class="carousel-arrow carousel-prev" aria-label="Previous testimonial">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15,18 9,12 15,6"></polyline>
+            </svg>
+          </button>
+          <button class="carousel-arrow carousel-next" aria-label="Next testimonial">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9,18 15,12 9,6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+<section class="contact-premium" id="Contact">
+  <!-- LEFT SIDE: Image -->
+  <div class="contact-premium__image-side">
+    <div class="contact-premium__image-wrapper">
+      <img 
+        src="./assets/contact (1).jpg" 
+        alt="GLO Medi Spa luxury clinic interior" 
+        class="contact-premium__image"
+      />
+      <div class="contact-premium__overlay"></div>
+    </div>
+  </div>
+
+  <!-- RIGHT SIDE: Form -->
+  <div class="contact-premium__form-side">
+    <div class="contact-premium__form-container">
+      <div class="contact-premium__form-header">
+        <h2 class="contact-premium__title">Get in Touch</h2>
+        <p class="contact-premium__subtitle">We're here to help. Send us a message and we'll respond as soon as possible.</p>
+      </div>
+
+      <form class="contact-premium__form" id="contactForm">
+        <div class="contact-premium__field">
+          <input 
+            type="text" 
+            id="name" 
+            class="contact-premium__input" 
+            placeholder=" " 
+            required 
+            aria-label="Your name"
+          />
+          <label for="name" class="contact-premium__label">Full Name</label>
+          <div class="contact-premium__underline"></div>
+        </div>
+
+        <div class="contact-premium__field">
+          <input 
+            type="email" 
+            id="email" 
+            class="contact-premium__input" 
+            placeholder=" " 
+            required 
+            aria-label="Your email"
+          />
+          <label for="email" class="contact-premium__label">Email Address</label>
+          <div class="contact-premium__underline"></div>
+        </div>
+
+        <div class="contact-premium__field">
+          <input 
+            type="tel" 
+            id="phone" 
+            class="contact-premium__input" 
+            placeholder=" " 
+            required 
+            aria-label="Your phone number"
+          />
+          <label for="phone" class="contact-premium__label">Phone Number</label>
+          <div class="contact-premium__underline"></div>
+        </div>
+
+        <div class="contact-premium__field contact-premium__field--textarea">
+          <textarea 
+            id="message" 
+            class="contact-premium__input contact-premium__textarea" 
+            placeholder=" " 
+            required 
+            rows="4"
+            aria-label="Your message"
+          ></textarea>
+          <label for="message" class="contact-premium__label">Message</label>
+          <div class="contact-premium__underline"></div>
+        </div>
+
+        <button type="submit" class="contact-premium__button">Send Message</button>
+      </form>
+
+      <!-- Trust Elements -->
+      <div class="contact-premium__trust">
+        <div class="contact-premium__trust-item">
+          <div class="contact-premium__trust-icon">📍</div>
+          <div class="contact-premium__trust-content">
+            <p class="contact-premium__trust-label">Location</p>
+            <p class="contact-premium__trust-value" data-location="short">{{location-short}}</p>
+          </div>
+        </div>
+        <div class="contact-premium__trust-item">
+          <div class="contact-premium__trust-icon">📞</div>
+          <div class="contact-premium__trust-content">
+            <p class="contact-premium__trust-label">Phone</p>
+            <p class="contact-premium__trust-value" data-contact="phone">{{phone}}</p>
+          </div>
+        </div>
+        <div class="contact-premium__trust-item">
+          <div class="contact-premium__trust-icon">💬</div>
+          <div class="contact-premium__trust-content">
+            <p class="contact-premium__trust-label">WhatsApp</p>
+            <p class="contact-premium__trust-value" data-contact="phone">{{phone}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== LOCATION MAP SECTION =============== -->
+<section class="location-map-section">
+  <div class="location-map-header">
+    <h2 class="location-map-title">Visit Our Clinic in <span data-location="city">{{city}}</span></h2>
+    <p class="location-map-subtitle">Located at <span data-location="full">{{location-full}}</span> with easy access and convenient parking</p>
+  </div>
+
+  <div class="location-map-wrapper">
+    <div class="location-map-container">
+      <iframe 
+        data-location="map"
+        class="location-map-iframe"
+        src="https://maps.google.com/maps?q=GLO%20Medi%20Spa%2C%20Office%20%23102.1st%20Floor%2C%20Kashmir%20Bridge%2C%20Mall%20of%20Faisalabad%2C%20W%20Canal%20Rd%2C%20Faisalabad%2C%20Pakistan&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        aria-label="{{brand-name}} location on Google Maps"
+      ></iframe>
+
+      <!-- Glassmorphism Info Card -->
+      <div class="location-map-info-card">
+        <div class="location-map-info-header">
+          <span class="location-map-info-icon">📍</span>
+          <h3 class="location-map-clinic-name" data-brand="name">{{brand-name}}</h3>
+        </div>
+
+        <div class="location-map-info-body">
+          <div class="location-map-info-item">
+            <p class="location-map-info-label">Address</p>
+            <p class="location-map-info-value" data-location="full">{{location-full}}</p>
+          </div>
+
+          <div class="location-map-info-item">
+            <p class="location-map-info-label">Phone</p>
+            <p class="location-map-info-value" data-contact="phone-display">{{phone-display}}</p>
+          </div>
+
+          <a data-location="directions" href="https://www.google.com/maps/dir/GLO+Medi+Spa,+Office+%23102.1st+Floor,+Kashmir+Bridge,+Mall+of+Faisalabad,+W+Canal+Rd,+Faisalabad,+Pakistan/GLO+Medi+Spa,+Office+%23102.1st+Floor,+Kashmir+Bridge,+Mall+of+Faisalabad,+W+Canal+Rd,+Faisalabad,+Pakistan/@31.4507264,73.1185152,12z/data=!3m2!4b1!5s0x392268f7a07f349d:0x409e5fe0838c5161!4m13!4m12!1m5!1m1!1s0x39226922f1c6380f:0x5d44bf8be8d3e8ea!2m2!1d73.1383359!2d31.4382088!1m5!1m1!1s0x39226922f1c6380f:0x5d44bf8be8d3e8ea!2m2!1d73.1383359!2d31.4382088?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="location-map-cta">
+            Get Directions
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="7 18 17 8 17 18"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+    
+  </main>
+
+  <!-- Instagram Strip (Optional Premium Feature) -->
+  <div class="instagram-strip">
+    <div class="instagram-strip__container">
+      <img src="./assets/Gallery-1.jpg" alt="Clinic work" class="instagram-strip__image">
+      <img src="./assets/Gallery-2.jpg" alt="Clinic work" class="instagram-strip__image">
+      <img src="./assets/Gallery-3.jpg" alt="Clinic work" class="instagram-strip__image">
+      <img src="./assets/Gallery-4.jpg" alt="Clinic work" class="instagram-strip__image">
+      <img src="./assets/Gallery-5.jpg" alt="Clinic work" class="instagram-strip__image">
+      <img src="./assets/Gallery-6.jpg" alt="Clinic work" class="instagram-strip__image">
+    </div>
+  </div>
+
+  <!-- Luxury Footer -->
+  <footer class="luxury-footer">
+    <!-- Gold Divider Line -->
+    <div class="footer-divider"></div>
+
+    <div class="footer-main">
+      <div class="footer-container">
+        <!-- Column 1: Brand Identity -->
+        <div class="footer-column footer-brand-column">
+          <div class="footer-logo">
+             <!-- <img data-brand="logo" src="./assets/LOGO.png" alt="{{brand-name}} logo" class="footer-logo__image"> -->
+             <h2 data-brand="name" class="footer-logo__text">{{brand-name}}</h2>
+          </div>
+          <p class="footer-mission">
+            <em data-brand="tagline">{{tagline}}</em>
+          </p>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div class="footer-column footer-nav-column">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About</a></li>
+            <li><a href="#treatments" class="footer-link">Treatments</a></li>
+            <li><a href="#gallery" class="footer-link">Gallery</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact & Location -->
+        <div class="footer-column footer-contact-column">
+          <h3 class="footer-heading">Visit Us</h3>
+          <div class="footer-contact-info">
+            <p class="footer-address" data-location="full">{{location-full}}</p>
+            <a data-contact="phone" href="tel:+923001234567" class="footer-contact-link">{{phone}}</a>
+            <a data-contact="email" href="mailto:info@glomedispa.pk" class="footer-contact-link">{{email}}</a>
+            <a data-location="map-link" href="https://maps.google.com/maps?q=GLO%20Medi%20Spa%2C%20Office%20%23102.1st%20Floor%2C%20Kashmir%20Bridge%2C%20Mall%20of%20Faisalabad%2C%20W%20Canal%20Rd%2C%20Faisalabad%2C%20Pakistan" target="_blank" rel="noopener" class="footer-map-link">
+              <span>View on Map</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div class="footer-column footer-newsletter-column">
+          <h3 class="footer-heading">Join Our Elite Circle</h3>
+          <form class="newsletter-form">
+            <div class="newsletter-input-wrapper">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="newsletter-input"
+                required
+                aria-label="Email address for newsletter"
+              >
+              <button type="submit" class="newsletter-submit" aria-label="Subscribe to newsletter">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="footer-social">
+        <a data-social="instagram" href="#" class="social-link" aria-label="Follow us on Instagram">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+        <a data-social="facebook" href="#" class="social-link" aria-label="Follow us on Facebook">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+          </svg>
+        </a>
+        <a data-contact="whatsapp" href="#" class="social-link" aria-label="Contact us on WhatsApp">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"></path>
+            <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Zm0 0a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a4 4 0 0 1-4-4v-1"></path>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Trust Elements -->
+      <div class="footer-trust">
+        <div class="trust-item">
+          <span class="trust-icon">🏥</span>
+          <span class="trust-text">Certified Dermatology Experts</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">⚡</span>
+          <span class="trust-text">Advanced Skin Technology</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-content">
+        <p class="footer-copyright">© {{year}} {{brand-name}}. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          <span class="footer-separator">|</span>
+          <a href="#" class="footer-bottom-link">Terms</a>
+        </div>
+        <p class="footer-tagline">Luxury Skin Clinic in <span data-location="city">{{city}}</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M6 9l6 6 6-6"></path>
+    </svg>
+  </button>
+
+  <!-- Floating WhatsApp Button -->
+<a data-contact="whatsapp" href="https://wa.me/923245781363?text=Hi, I want to book a consultation"
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Chat on WhatsApp">
+
+  <div class="whatsapp-icon">
+    <!-- Lucide style SVG -->
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+      <path d="M21 12a9 9 0 1 1-4-7.5L21 3l-1.5 4A9 9 0 0 1 21 12z"/>
+      <path d="M8 11c1.5 3 4 4.5 7 5l2-2"/>
+    </svg>
+  </div>
+
+  <span class="tooltip">Chat with us</span>
+</a>
+
+<script src="brand-config.js?v=2"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
